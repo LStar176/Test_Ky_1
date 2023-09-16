@@ -8,6 +8,7 @@
     --fs-14: 14px;
     --fs-16: 16px;
     --fs-25: 25px;
+    --fs-36: 36px;
     --fs-60: 60px;
 
     --ff-primary: 'Space Grotesk', sans-serif;
@@ -182,7 +183,25 @@ main {
                     }
                 }
 
-                .quantity {}
+                .quantity {
+                    display: flex;
+
+                    .part {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 70px;
+
+                        h3 {
+                            font-size: var(--fs-36);
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: var(--fs-12);
+                            font-weight: 700;
+                        }
+                    }
+                }
             }
 
             .avatar {}
